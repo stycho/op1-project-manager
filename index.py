@@ -1,6 +1,9 @@
-from op1_project_manager.op1_project_manager import Op1ProjectManager
+from project_manager.project_manager import ProjectManager
 import os
 
-project_manager = Op1ProjectManager()
+project_manager = ProjectManager()
 
-print(os.getcwd())
+# project_manager.backup()
+project_manager.restore()
+print('woop!')
+project_manager.end()
